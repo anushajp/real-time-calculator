@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 class Home(View):
     def get(self, request):
-        return HttpResponse("Welcome!")
+        return render(request, 'calculator/home.html', locals())
