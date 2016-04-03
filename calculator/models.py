@@ -1,3 +1,9 @@
 from django.db import models
+from swampdragon.models import SelfPublishModel
+from calculator.serializers import CalculationSerializer
 
-# Create your models here.
+
+class Calculation(SelfPublishModel, models.Model):
+    serializer_class = CalculationSerializer
+    to_calculate = models.TextField()
+    answer = models.IntegerField()

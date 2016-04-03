@@ -1,3 +1,5 @@
 from django.contrib import admin
+from calculator.models import Calculation
 
-# Register your models here.
+admin.site.register(Calculation)
+
