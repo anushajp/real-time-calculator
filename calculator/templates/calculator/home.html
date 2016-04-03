@@ -1,57 +1,67 @@
 {% load static swampdragon_tags %}
-<link rel="stylesheet" href="{% static 'calculator/css/home.css' %}"/>
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
 
-<!-- AngularJS -->
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+  <body>
+    <link rel="stylesheet" href="{% static 'calculator/css/home.css' %}"/>
 
-<form name="Calc">
-  <table border="4" bordercolorlight="#FF9900" bordercolordark="#FF6633">
-    <tbody><tr>
-        <td>
-          <div align="center"> <font size="+1">
-              <input type="text" name="Input" size="16">
-          </font></div>
-        </td>
-      </tr>
-      <tr>
-        <td height="111">
-          <div align="center">
-            <input type="button" name="one" value="  1  " onclick="Calc.Input.value += '1'">
-            <input type="button" name="two" value="  2  " onclick="Calc.Input.value += '2'">
-            <input type="button" name="three" value="  3  " onclick="Calc.Input.value += '3'">
-            <input type="button" name="plus" value="  +  " onclick="Calc.Input.value += ' + '">
-            <br>
-            <input type="button" name="four" value="  4  " onclick="Calc.Input.value += '4'">
-            <input type="button" name="five" value="  5  " onclick="Calc.Input.value += '5'">
-            <input type="button" name="six" value="  6  " onclick="Calc.Input.value += '6'">
-            <input type="button" name="minus" value="   -  " onclick="Calc.Input.value += ' - '">
-            <br>
-            <input type="button" name="seven" value="  7  " onclick="Calc.Input.value += '7'">
-            <input type="button" name="eight" value="  8  " onclick="Calc.Input.value += '8'">
-            <input type="button" name="nine" value="  9  " onclick="Calc.Input.value += '9'">
-            <input type="button" name="times" value="  x  " onclick="Calc.Input.value += ' * '">
-            <br>
-            <input type="button" name="clear" value="  Clear " onclick="Calc.Input.value = ''">
-            <input type="button" name="zero" value="  0  " onclick="Calc.Input.value += '0'">
-            <input type="button" name="div" value="   /  " onclick="Calc.Input.value += ' / '">
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div align="center">
-            <input type="button" name="DoIt" value="             =             " onclick="Calc.Input.value = eval(Calc.Input.value)">
-          </div>
-        </td>
-      </tr>
-  </tbody></table>
+    <!-- AngularJS -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
 
-  <div align="right"><br>
-  </div>
-  <p>&nbsp;</p>
-</form>
+    <form name="Calc">
+      <table border="4" bordercolorlight="#FF9900" bordercolordark="#FF6633">
+	<tbody><tr>
+            <td>
+              <div align="center"> <font size="+1">
+		  <input type="text" name="Input" size="16">
+              </font></div>
+            </td>
+	  </tr>
+	  <tr>
+            <td height="111">
+              <div align="center">
+		<input type="button" name="one" value="  1  " onclick="Calc.Input.value += '1'">
+		<input type="button" name="two" value="  2  " onclick="Calc.Input.value += '2'">
+		<input type="button" name="three" value="  3  " onclick="Calc.Input.value += '3'">
+		<input type="button" name="plus" value="  +  " onclick="Calc.Input.value += ' + '">
+		<br>
+		<input type="button" name="four" value="  4  " onclick="Calc.Input.value += '4'">
+		<input type="button" name="five" value="  5  " onclick="Calc.Input.value += '5'">
+		<input type="button" name="six" value="  6  " onclick="Calc.Input.value += '6'">
+		<input type="button" name="minus" value="   -  " onclick="Calc.Input.value += ' - '">
+		<br>
+		<input type="button" name="seven" value="  7  " onclick="Calc.Input.value += '7'">
+		<input type="button" name="eight" value="  8  " onclick="Calc.Input.value += '8'">
+		<input type="button" name="nine" value="  9  " onclick="Calc.Input.value += '9'">
+		<input type="button" name="times" value="  x  " onclick="Calc.Input.value += ' * '">
+		<br>
+		<input type="button" name="clear" value="  Clear " onclick="Calc.Input.value = ''">
+		<input type="button" name="zero" value="  0  " onclick="Calc.Input.value += '0'">
+		<input type="button" name="div" value="   /  " onclick="Calc.Input.value += ' / '">
+              </div>
+            </td>
+	  </tr>
+	  <tr>
+            <td>
+              <div align="center">
+		<input type="button" name="DoIt" value="             =             " onclick="Calc.Input.value = eval(Calc.Input.value)">
+              </div>
+            </td>
+	  </tr>
+      </tbody></table>
 
-<table>
-<tr><th>Calculations</th><tr>
-<tr><td>Row 1, Column 1</td><tr>
-</table>
+      <div align="right"><br>
+      </div>
+      <p>&nbsp;</p>
+    </form>
+
+    <table>
+      <tr><th>Calculations</th><tr>
+      <tr><td>Row 1, Column 1</td><tr>
+    </table>
+  <body>
+</html>
