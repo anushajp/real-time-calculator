@@ -12,6 +12,11 @@
     <!-- AngularJS -->
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
 
+    {% swampdragon_settings %}
+    <script type="text/javascript" src="{% static 'swampdragon/js/dist/swampdragon.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'swampdragon/js/dist/datamapper.js' %}"></script>
+    <script type="text/javascript" src="{% static 'swampdragon/js/angular/services.js' %}"></script>
+
     <form name="Calc">
       <table border="4" bordercolorlight="#FF9900" bordercolordark="#FF6633">
 	<tbody><tr>

@@ -111,3 +111,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, "../", "static-collected")
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
+DRAGON_URL = 'http://localhost:9999/'
