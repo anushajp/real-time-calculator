@@ -24,7 +24,7 @@ Reference -> http://redis.io/topics/quickstart
 
 Now start a virtualenv in python3 mode, activate it and install the packages in requirements.txt file in the code base.
 ```
-virtualenv -p python3 venv
+virtualenv -p /usr/bin/python3.* venv
 source /path/to/venv/bin/activate
 pip install -r /path/to/code/base/requirements.txt
 ```
