@@ -79,7 +79,7 @@
       <h3>Last Calculations done via the Site</h3>
 
       <ul>
-        <li ng-repeat="calc in calcs | reverse | limitTo:5">
+        <li ng-repeat="calc in calcs | reverse | limitTo:10">
           {{ calc.to_calculate }} = {{ calc.answer }}
         </li>
       </ul>
