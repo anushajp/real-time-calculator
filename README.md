@@ -2,6 +2,8 @@
 A challenge as part of a job application. The last 10 calculations done via the site across users are displayed with last displayed first.
 Updated in real-time. 
 
+The project is primarily in Django and uses swampdragon for real-time updates of the calculations across users which uses a tornado instance to keep a web socket open for the real-time updates.
+ 
 To see it working,
 
 Pull code.
