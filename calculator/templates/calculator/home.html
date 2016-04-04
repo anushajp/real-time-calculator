@@ -21,6 +21,8 @@
     <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/controllers.js' %}"></script>
 
+    <script type="text/javascript" src="{% static 'calculator/js/home.js' %}"></script>
+
     <form name="Calc">
       <table border="4" bordercolorlight="#FF9900" bordercolordark="#FF6633">
 	<tbody><tr>
@@ -57,7 +59,7 @@
 	  <tr>
             <td>
               <div align="center">
-		<input type="button" name="DoIt" value="             =             " onclick="Calc.Input.value = eval(Calc.Input.value)">
+		<input type="button" name="DoIt" value="             =             " onclick="calculateInput(Calc.Input.value)">
               </div>
             </td>
 	  </tr>
