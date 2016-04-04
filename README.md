@@ -32,8 +32,9 @@ pip install -r /path/to/code/base/requirements.txt
 ```
 --------------------------
 
-Start Django and Swampdragon servers
+Run Django Migrations, Start Django and Swampdragon servers
 ```
+python manage.py /path/to/code/base/manage.py migrate
 python manage.py /path/to/code/base/manage.py runserver
 python /path/to/code/base/server.py
 ```
