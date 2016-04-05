@@ -4,3 +4,5 @@ __pycache__/
 *.pyc
 dump.rdb
 staticfiles/
+*.tar.gz
+trunk/
