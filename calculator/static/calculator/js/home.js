@@ -1,6 +1,13 @@
 function calculateInput (toCalculate) {
     var csrftoken = getCookie('csrftoken');
-    var answer = eval(toCalculate);
+    try {
+	var answer = eval(toCalculate);
+    } catch (e) {
+	if (e instanceof SyntaxError) {
+            alert("Please try a valid calculation");
+	    return;
+	}
+    }
 
     Calc.Input.value = answer;
 
