@@ -1,9 +1,9 @@
-var TodoApp = angular.module('RTCalcApp', [
+var rTCalcApp = angular.module('RTCalcApp', [
     'SwampDragonServices',
     'RTCalcControllers'
 ]);
 
-TodoApp.filter('reverse', function() {
+rTCalcApp.filter('reverse', function() {
     return function(items) {
 	return items.slice().reverse();
     };
