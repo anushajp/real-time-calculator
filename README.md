@@ -39,4 +39,4 @@ python manage.py /path/to/code/base/manage.py runserver
 python /path/to/code/base/server.py
 ```
 
-Please see the site active at localserver:8000 and see real-time updates happening across tabs/ brwosers.
+Please see the site active at localserver:8000 and see real-time updates happening across tabs/ browsers.
