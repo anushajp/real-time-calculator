@@ -55,9 +55,10 @@
 		<input type="button" name="nine" value="  9  " onclick="Calc.Input.value += '9'">
 		<input type="button" name="times" value="  x  " onclick="Calc.Input.value += ' * '">
 		<br>
-		<input type="button" name="clear" value="  Clear " onclick="Calc.Input.value = ''">
-		<input type="button" name="zero" value="  0  " onclick="Calc.Input.value += '0'">
-		<input type="button" name="div" value="   /  " onclick="Calc.Input.value += ' / '">
+		<input type="button" name="back" value="Back" onclick="Calc.Input.value = Calc.Input.value.slice(0,-1)">
+		<input type="button" name="clear" value="Clear" onclick="Calc.Input.value = ''">
+		<input type="button" name="zero" value=" 0 " onclick="Calc.Input.value += '0'">
+		<input type="button" name="div" value="  / " onclick="Calc.Input.value += ' / '">
               </div>
             </td>
 	  </tr>
